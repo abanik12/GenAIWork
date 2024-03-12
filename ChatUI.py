@@ -57,6 +57,7 @@ print(f"# of Document chunks: {len(texts)}")
 
 
 embeddings = OpenAIEmbeddings()
+## Below commented code to use local chroma DB
 #vectordb = Chroma.from_documents(documents=texts, embedding=embeddings, persist_directory=persist_directory)
 #vectordb.persist()
 #vectordb = Chroma(persist_directory=persist_directory,embedding_function=embeddings)
